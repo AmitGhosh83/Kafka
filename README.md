@@ -311,10 +311,14 @@ Run:
 ```powershell
 # Produce
 python .\producer.py
+.\.venv\Scripts\python.exe producer.py
 
 # Open two terminals and run the same consumer twice (same GROUP)
 python .\consumer.py
 python .\consumer.py
+
+.\.venv\Scripts\python.exe consumer.py
+.\.venv\Scripts\python.exe consumer.py
 ```
 
 Inspect group/partitions:
